@@ -1,0 +1,22 @@
+{
+  "name": "mini_project_tailwindcss_version",
+  "version": "1.0.0",
+  "description": "Mini_Project_RevoU",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss build src/style.css -o dist/style.css",
+    "watch:tailwind": "nodemon --watch src/style.css -x \"npm run build:css\"",
+    "serve": "npm run watch:tailwind",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aferil Yudhatama",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
