@@ -143,12 +143,20 @@
                   <input type="radio" class="ml-9 md:ml-2" name="nama" placeholder="Name" autocomplete="off" required>
                   <label for="html">Perempuan</label><br>
                 </div>
-                <div class="input-group mb-2">
+                <div class="input-group -mb-2">
                   <label class="label ml-9 md:ml-2">Pesan</label> : &ThinSpace;<br>
                   <div class="text-center md:text-left">
                     <textarea type="text" class="my-1 mx-4 w-5/6 px-3 py-3 rounded-md drop-shadow-md md:px-3 md:mx-1 hover:border-amber-600" placeholder="Pesan" id="" cols="30" rows="4" autocomplete="off" required></textarea>
                   </div>
                 </div>
+                <button type="submit" class="btn-kirim w-5/6 ml-9 md:ml-1 my-3 mb-10 mx-4 py-2 px-40 md:px-64 border rounded-md bg-black hover:bg-amber-600 duration-200 text-white">Send</button>
+                <button type="button" class="btn-loading hidden inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed ml-4" disabled="">
+                  <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  Processing...
+                </button>
                 <!-- <label class="label" for="">Nama </label>&ThinSpace;
                 :<input type="text" class="my-3 mx-4 w-5/6 px-7 py-2 rounded-md drop-shadow-md md:px-3 md:mx-1 md:w-96" name="nama" placeholder="Name" autocomplete="off" required><br>
                 <label class="label" for="">Tanggal Lahir </label>: &ThinSpace;
