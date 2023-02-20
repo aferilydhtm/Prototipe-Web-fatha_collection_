@@ -76,7 +76,12 @@
       <div class="bg-zinc-200 h-auto">
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div class="ml-10 mr-10 md:ml-20 md:mr-10 md:p-1 mt-14 mb-14 md:mt-15 md:mb-15 text-center md:text-left">
-            <p class="text-black mt-5 text-4xl" id="app"></p>
+            <p class="text-black mt-5 text-4xl">Hi <span id="nama"></span>,<span id="app"></span></p>
+            <script>
+              var name = prompt("Masukkan Nama Anda");
+              document.getElementById("nama").innerText = name;
+            </script>
+
             <p class="text-black text-xl">Ini adalah Website Company</p>
           </div>
   
@@ -219,7 +224,7 @@
   
       typewriter
         .pauseFor(1000)
-        .typeString('Hi, Welcome to fatha_collection_')
+        .typeString(' Welcome to fatha_collection_')
         .pauseFor(1000)
         .start();
     </script>
