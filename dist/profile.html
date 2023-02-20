@@ -52,7 +52,7 @@
         <nav class="md:pt-1 md:mr-5">
             <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-2 lg:pt-0 md:text-sm font-poppins">
             <li class="nav__item">
-                <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-amber-600 hover:text-amber-600 active-link" href="#home">HOME</a>
+                <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-amber-600 hover:text-amber-600 active-link" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
                 <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-amber-600 hover:text-amber-600" href="profile.html">OUR PROFILE</a>
@@ -72,6 +72,9 @@
   <!-- Main -->
   <main>
     <!-- home -->
+    <div class="bg-[url('/img/hero-pattern.svg')]">
+
+    </div>
     <section class="home section" id="home">
       <div class="bg-zinc-200 h-auto">
         <div class="grid grid-cols-1 md:grid-cols-2">
@@ -225,29 +228,29 @@
     </script>
 
     <script>
-      function validateForm() {
-        var nama = document.forms["MessageUs"]["nama"].value;
-        var tgl_lahir = document.forms["MessageUs"]["tgl_lahir"].value;
-        var jenis_kelamin = document.forms["MessageUs"]["jenis_kelamin"].value;
-        var pesan = document.forms["MessageUs"]["pesan"].value;
-        if (nama == "" || tgl_lahir == "" || jenis_kelamin == "" || pesan == "") {
-          alert("Harap isi semua field");
-          return false;
+        function validateForm() {
+          var nama = document.forms["MessageUs"]["nama"].value;
+          var tgl_lahir = document.forms["MessageUs"]["tgl_lahir"].value;
+          var jenis_kelamin = document.forms["MessageUs"]["jenis_kelamin"].value;
+          var pesan = document.forms["MessageUs"]["pesan"].value;
+          if (nama == "" || tgl_lahir == "" || jenis_kelamin == "" || pesan == "") {
+            alert("Harap isi semua field");
+            return false;
+          }
         }
-      }
-  
-      document.querySelector("form").addEventListener("submit", function(e) {
-        e.preventDefault();
-        var nama = document.forms["MessageUs"]["nama"].value;
-        var tgl_lahir = document.forms["MessageUs"]["tgl_lahir"].value;
-        var jenis_kelamin = document.forms["MessageUs"]["jenis_kelamin"].value;
-        var pesan = document.forms["MessageUs"]["pesan"].value;
-        var date = new Date();
-        var tanggal = date.toLocaleDateString();
-        var waktu = date.toLocaleTimeString();
-        document.getElementById("hasil").innerHTML = "Nama Lengkap : " + nama + "<br> Tanggal Lahir : " + tgl_lahir + "<br> Jenis Kelamin : " + jenis_kelamin + "<br> Pesan : " + pesan + "<br><br>Current time: " + tanggal + " " + waktu;
-      });
-    </script>
+    
+        document.querySelector("form").addEventListener("submit", function(e) {
+          e.preventDefault();
+          var nama = document.forms["MessageUs"]["nama"].value;
+          var tgl_lahir = document.forms["MessageUs"]["tgl_lahir"].value;
+          var jenis_kelamin = document.forms["MessageUs"]["jenis_kelamin"].value;
+          var pesan = document.forms["MessageUs"]["pesan"].value;
+          var date = new Date();
+          var tanggal = date.toLocaleDateString();
+          var waktu = date.toLocaleTimeString();
+          document.getElementById("hasil").innerHTML = "Nama Lengkap : " + nama + "<br> Tanggal Lahir : " + tgl_lahir + "<br> Jenis Kelamin : " + jenis_kelamin + "<br> Pesan : " + pesan + "<br><br>Current time: " + tanggal + " " + waktu;
+        });
+      </script>
 
   <!-- End JavaScript -->
 
